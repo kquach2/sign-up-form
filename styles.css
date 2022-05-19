@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+.left {
+    width: 30vw;
+    height: 100vh;
+    background-image: url(images/unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.right-top, .right-bottom {
+    height: 35vh;
+    background-color: rgb(249, 249, 249);
+}
+
+.right-middle {
+    height: 30vh;
+}
+
+.semi {
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 150px;
+}
