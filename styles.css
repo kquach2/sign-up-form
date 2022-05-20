@@ -5,6 +5,8 @@ body {
 }
 
 .left {
+    display: flex;
+    flex-direction: column;
     width: 30%;
     background-image: url('images/unsplash.jpg');
     background-size: cover;
@@ -29,10 +31,21 @@ body {
 }
 
 .semi {
+    display: flex;
+    justify-content: center;
     height: 20%;
     background-color: rgba(0, 0, 0, 0.2);
     position: relative;
-    top: 20%;
+    top: 18.25%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    max-height: 100%;
+    gap: 8px;
 }
 
 .description-box {
@@ -137,4 +150,39 @@ a:link {
 
 a:visited {
     color: blue;
+}
+
+img {
+    max-width:40%;
+    max-height:30%;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.icon-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+}
+
+
+.icon-photo p {
+    color: white;
+    font-size: 10px;
+}
+
+a[href*="flaticon"], a[href*="unsplash"] {
+    color: white;
+    font-size: 10px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+div.icon-photo p:first-child {
+    margin-bottom: 0px;
 }
