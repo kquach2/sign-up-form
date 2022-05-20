@@ -19,42 +19,51 @@
                 <p class = "description">You <em>know</em> you want to.</p>
             </div>
         </div>
-        <div class = "right-middle">
-            <p class = "phrase">Let's do this!</p>
-            <div class = "inputs">
-                <div class = "left-inputs">
-                    <div>
-                        <label for = "fname">FIRST NAME</label>
-                        <input id = "fname" name = "fname" type = "text" placeholder = " " required>
+        <form>
+            <div class = "right-middle">
+                <p class = "phrase">Let's do this!</p>
+                <div class = "inputs">
+                    <div class = "left-inputs">
+                        <div>
+                            <label for = "fname">FIRST NAME</label>
+                            <input id = "fname" name = "fname" type = "text" placeholder = " " required>
+                        </div>
+                        <div>
+                            <label for = "email">EMAIL</label>
+                            <input id = "email" name = "email" type = "email" placeholder = " " required> 
+                        </div>
+                        <div>
+                            <label for = "password">PASSWORD</label>
+                            <input id = "password" class = "error" name = "password" placeholder = " " type = "password" required>
+                            <span></span>
+                        </div>
                     </div>
-                    <div>
-                        <label for = "email">EMAIL</label>
-                        <input id = "email" name = "email" type = "email" placeholder = " " required> 
-                    </div>
-                    <div>
-                        <label for = "password">PASSWORD</label>
-                        <input id = "password" class = "error" name = "password" placeholder = " " type = "password" required>
-                        <span></span>
-                    </div>
-                </div>
-                <div class = "right-inputs">
-                    <div>
-                        <label for = "lname">LAST NAME</label>
-                        <input id = "lname" name = "lname" placeholder = " " type = "text" required>
-                    </div>
-                    <div>
-                        <label for = "phone">PHONE NUMBER</label>
-                        <input id  ="phone"  name = "phone" type = "tel" placeholder = " " required pattern = "[0-9]{10}|[0-9]{3}([-. ])[0-9]{3}\1[0-9]{4}">
-                    </div>
-                    <div>
-                        <label for = "confirm-password">CONFIRM PASSWORD</label>
-                        <input id = "confirm-password" class = "error" name = "confirm-password" type = "password" placeholder = " " required>
-                    </div>
+                    <div class = "right-inputs">
+                        <div>
+                            <label for = "lname">LAST NAME</label>
+                            <input id = "lname" name = "lname" placeholder = " " type = "text" required>
+                        </div>
+                        <div>
+                            <label for = "phone">PHONE NUMBER</label>
+                            <input id  ="phone"  name = "phone" type = "tel" placeholder = " " required pattern = "[0-9]{10}|[0-9]{3}([-. ])[0-9]{3}\1[0-9]{4}">
+                        </div>
+                        <div>
+                            <label for = "confirm-password">CONFIRM PASSWORD</label>
+                            <input id = "confirm-password" class = "error" name = "confirm-password" type = "password" placeholder = " " required>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class = "right-bottom"></div>
+            <div class = "right-bottom">
+                <div class = "right-bottom-content">
+                    <button>Create Account</button>
+                    <p class = "log-in">Already have an account? <a href="">Log in</a</p>
+                </div>
+            </div>
+        </form>
+        
+       
     </div>
 </body>
 </html>
