@@ -24,6 +24,7 @@ body {
 }
 
 .right-middle {
+    position: relative;
     height: 30vh;
 }
 
@@ -37,7 +38,7 @@ body {
 .description-box {
     position: absolute;
     left: 5%;
-    top: 30%;
+    top: 50%;
 }
 
 @font-face {
@@ -46,10 +47,64 @@ body {
          url('fonts/roboto-regular-webfont.woff') format('woff');
 }
 
-.description {
+.description, .phrase {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
+.phrase {
+    position: absolute;
+    left: 5%;  
+}
 
+.inputs {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    display: flex;
+    gap: 70px;
+}
+
+.left-inputs div, .right-inputs div {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-inputs, .right-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown), .error {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ADD8E6;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+#password.error + span::after {
+    content: "* Passwords do not match";
+    color: red;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    position: relative;
+    top: -5px;
+}
 
