@@ -5,9 +5,8 @@ body {
 }
 
 .left {
-    width: 30vw;
-    height: 100vh;
-    background-image: url(images/unsplash.jpg);
+    width: 30%;
+    background-image: url('images/unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -19,6 +18,7 @@ body {
 }
 
 .right-top, .right-bottom {
+    position: relative;
     height: 35vh;
     background-color: rgb(249, 249, 249);
 }
@@ -28,8 +28,28 @@ body {
 }
 
 .semi {
-    height: 20vh;
+    height: 20%;
     background-color: rgba(0, 0, 0, 0.2);
     position: relative;
-    top: 150px;
+    top: 20%;
 }
+
+.description-box {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+
